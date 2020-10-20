@@ -1,0 +1,345 @@
+/* -------------- loader/preloader --------------- */
+
+.loader {
+    height: 100%;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.loader .inner {
+    width: 100%;
+    height: 100%;
+    background: url("../img/spinners/standard.gif") center center no-repeat;
+}
+ 
+/* ----------- Landing page slider ----------------------- */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../img/icons/next.png);
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../img/icons/prev.png);
+}
+
+.slides-navigation .next,
+.slides-navigation .prev {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.titleMessage .sub{
+    color: #f1c40f;
+    font-weight: 100;
+}
+/* -------------- navigation section -------------- */
+#navigation {
+    background: #16a085;
+    padding: 10px 0;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    color: white;
+}
+
+.navbar .nav-item a {
+    color: white;
+    padding: 0 10px;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/icons/menu.png);
+    background-size: cover;
+}
+
+/*  ------------ about section --------------- */
+.section {
+    padding: 100px 0;
+}
+
+.my_thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+/* --------------text slider ---------------------*/
+.titleMessage {
+    position: absolute;
+    z-index: 6;
+    top: 40%;
+    text-align: center;
+    width: 100%
+}
+
+.titleMessage p {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.titleMessage p.main {
+    font-size: 50px;
+}
+
+.titleMessage .heading p.sub {
+    font-size: 20px
+}
+
+
+/* ---------------skillsSection ----------------*/
+.skillsSection {
+    background: #16a085;
+    color: #F5F4F9;
+}
+
+.chart {
+    position: relative;
+    height: 152px;
+    width: 152px;
+    display: inline-block;
+}
+
+canvas {
+    position: absolute;
+    left: 0;
+}
+
+.percent {
+    color: black;
+    line-height: 152px;
+    font-size: 35px;
+}
+
+.percent:after {
+    content: '%';
+}
+
+button.owl-prev {
+    width: 5%;
+}
+
+button.owl-next {
+    width: 5%;
+}
+
+/* --------------------- state section ------------------------*/
+
+.squreItem {
+    position: relative;
+
+}
+
+.squareInnerContainer {
+    border: 2px solid black;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border-top: none;
+    margin-bottom: 25px;
+
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+    content: '';
+    border-bottom: 2px solid black;
+    width: 30%;
+    position: absolute;
+    top: 0;
+}
+
+.squareInnerContainer:before {
+    right: 0;
+}
+
+.squareInnerContainer:after {
+    left: 0;
+}
+
+.squareIcon {
+    position: absolute;
+    top: -30px;
+    left: 42%;
+    font-size: 45px;
+    color: green;
+}
+
+/* --------------------- call to action ----------------------- */
+
+.callToAction {
+    background: #16a085;
+    color: #F5F4F9;
+}
+
+.callToAction p {
+    text-transform: capitalize;
+}
+
+.callToAction a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 10px 15px;
+}
+
+.callToAction a:hover {
+    color: #212529;
+    border: 2px solid #212529;
+    transition: all .5s;
+}
+
+.mybtn {
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+/* ------------------------ portfolio section -------------------*/
+.section01{
+    padding: 50px 0;
+}
+#portfolio h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.filter {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+ul#filters {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#filters li {
+    display: inline-block;
+    padding: 5px;
+}
+
+#filters a {
+    color: gray;
+    border: 1px solid gray;
+    padding: 8px 10px;
+}
+#filters .current {
+    background: #16a085;
+    color: white;
+}
+ul.items {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+.items img{
+    width: 100%;
+}
+.items li{
+    float: left;
+    padding: 5px;
+}
+.items .searchButton{
+    float: left;
+    left: -300px;
+}
+.items .projectLink{
+    float: right;
+    right: -300px;
+}
+.items .item:hover .searchButton{
+    left: 0;
+}
+.items .item:hover .projectLink{
+    right: 0;
+}
+.items .icons {
+    position: absolute;
+    top: 43%;
+    left:31%;
+    text-align: center;
+    height: 40px;
+    width: 90px;
+    z-index: 3;
+}
+
+.icons a {
+    background: orangered;
+    color: white;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    transition: all 0.2s linear, 1s;
+    position:relative;
+    opacity: 1;
+}
+
+.itemsContainer{
+    width: 100%;
+}
+
+.items .item{
+    position: relative;
+    overflow: hidden;
+}
+
+.items .imgOverlay {
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.items .imgOverlay:hover{
+    opacity: 1;
+    transition: all 0.2s linear, 1s;
+}
+.items .item:hover img{
+    transform: scale(1.5,1.5);
+    transition: all 0.2s linear, 1s;
+}
+/* -------------------- footersection --------------------------- */
+
+
+.footerSection {
+    background: #2c3e50;
+}
+
+.footerSection p {
+    color: white;
+    padding: 10px 10px 0 0;
+}
